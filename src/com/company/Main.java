@@ -1,19 +1,26 @@
 package com.company;
 
-import java.util.ArrayList;
+import javax.crypto.ExemptionMechanism;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Player p = new Player("micha", "dwarft","warior", 18, 10, 1, 100, 0);
-        Enemy e = new Enemy("zajda", "dwarft","warior", 17, 1, 0, 1, 10);
+        Player p = new Player("Leon", "person","survivor", 100, 0);
 
-        Item i = Item.DIA_SWORD;
-        Item i2 = Item.GOLDEN_AXE;
+        Enemy z = new Enemy("MrWong", "zombie","enemy", 80, 25);
+        Enemy b = new Enemy("Mr. Birkin", "G-mutnant", "enemy", 300, 35);
 
-        e.setHp(e.getHp() - i.getDmg() -p.getDmg());
-        p.setHp(p.getHp()- e.getDmg() -i.getDmg());
+        Weapeon knife = Weapeon.KNIFE;
+        Weapeon Matilda = Weapeon.MATILDA_PISTOL;
+        Weapeon Shotgun = Weapeon.SHOTGUN;
+        Weapeon Deagle = Weapeon.DEAGLE;
+        Weapeon Rocket_Launcher = Weapeon.ROCKET_LAUNCHER;
+
+
+
+       // e.setHp(e.getHp() - knife.getDmg() -p.getDmg());
+       // p.setHp(p.getHp()- e.getDmg() -knife.getDmg());
 
     }
 }

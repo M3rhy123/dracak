@@ -3,8 +3,8 @@ package com.company;
 public class Player extends Entity implements Ifight {
 
 
-    public Player(String name, String rasa, String role, int lvl, double hp, double damage, double mana, double money) {
-        super(name, rasa, role, lvl, hp, damage, mana, money);
+    public Player(String name, String rasa, String role, double hp, double damage) {
+        super(name, rasa, role, hp, damage);
     }
 
     @Override
