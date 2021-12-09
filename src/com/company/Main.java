@@ -6,10 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Player p = new Player("Leon", "person","survivor", 100, 0);
+        Entity p, z, b;
 
-        Enemy z = new Enemy("MrWong", "zombie","enemy", 80, 25);
-        Enemy b = new Enemy("Mr. Birkin", "G-mutnant", "enemy", 300, 35);
+        p = new Entity("Leon", "person","survivor", 100, 0);
+
+        z = new Entity("MrWong", "zombie","enemy", 80, 25);
+        b = new Entity("Mr. Birkin", "G-mutnant", "enemy", 300, 35);
 
         Weapeon knife = Weapeon.KNIFE;
         Weapeon Matilda = Weapeon.MATILDA_PISTOL;
@@ -19,8 +21,10 @@ public class Main {
 
 
 
-       // e.setHp(e.getHp() - knife.getDmg() -p.getDmg());
-       // p.setHp(p.getHp()- e.getDmg() -knife.getDmg());
+
+
+
 
     }
+
 }

@@ -7,7 +7,7 @@ public enum Weapeon {
     DEAGLE("Lightning Hawk",100, 7),
     ROCKET_LAUNCHER("Anti tank Rocket", 150, 4);
 
-
+    private int munice;
     private String name;
     private double dmg;
     private double capacity;
@@ -30,6 +30,9 @@ public enum Weapeon {
         return capacity;
     }
 
+    public int getMunice() {
+        return munice;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -43,4 +46,7 @@ public enum Weapeon {
         this.capacity = capacity;
     }
 
+    public void setMunice(int munice) {
+        this.munice = munice;
+    }
 }
