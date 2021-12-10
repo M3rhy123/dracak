@@ -1,13 +1,13 @@
 package com.company;
 
 public enum Weapeon {
-    KNIFE("Combat Knife", 20, 5),
-    MATILDA_PISTOL("Matilda", 20, 14),
+    KNIFE("Combat Knife", 0, 5),
+    MATILDA_PISTOL("Matilda", 21, 14),
     SHOTGUN("W-870", 75, 4),
     DEAGLE("Lightning Hawk",100, 7),
     ROCKET_LAUNCHER("Anti tank Rocket", 150, 4);
 
-    private int munice;
+    private int ammo;
     private String name;
     private double dmg;
     private double capacity;
@@ -30,8 +30,8 @@ public enum Weapeon {
         return capacity;
     }
 
-    public int getMunice() {
-        return munice;
+    public int getAmmo() {
+        return ammo;
     }
 
     public void setName(String name) {
@@ -46,7 +46,7 @@ public enum Weapeon {
         this.capacity = capacity;
     }
 
-    public void setMunice(int munice) {
-        this.munice = munice;
+    public void setAmmo(int munice) {
+        this.ammo = munice;
     }
 }
