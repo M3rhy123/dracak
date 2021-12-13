@@ -3,9 +3,8 @@ package com.company;
 public enum Weapeon {
     KNIFE("Combat Knife", 0, 5),
     MATILDA_PISTOL("Matilda", 21, 14),
-    SHOTGUN("W-870", 75, 4),
-    DEAGLE("Lightning Hawk",100, 7),
-    ROCKET_LAUNCHER("Anti tank Rocket", 150, 4);
+    SHOTGUN("W-870 (SHOTGUN)", 75, 4),
+    DEAGLE("Lightning Hawk",100, 7);
 
     private int ammo;
     private String name;

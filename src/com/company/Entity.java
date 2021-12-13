@@ -21,32 +21,11 @@ public class Entity {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRasa() {
-        return rasa;
-    }
-
-    public void setRasa(String rasa) {
-        this.rasa = rasa;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
     public double getHp() {
         return hp;
     }
 
-    public void setHp(double hp) {
-        this.hp = hp;
+    public void setHp(double hp) {this.hp = hp;
     }
 
 
