@@ -17,8 +17,8 @@ public class Main {
         Weapeon.MATILDA_PISTOL.setAmmo(14);
         Weapeon.SHOTGUN.setAmmo(0);
         Weapeon.DEAGLE.setAmmo(0);
-        //Room room0 = new Room("Gas Station");
-        //room0.gasStation(p,z);
+        Room room0 = new Room("Gas Station");
+        room0.gasStation(p,z);
 
         Room room1 = new Room("Racoon City");
         room1.city(p,z);
