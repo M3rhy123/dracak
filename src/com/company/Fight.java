@@ -20,8 +20,7 @@ public class Fight {
 
                 switch (x) {
                     case 1-> {
-                        System.out.println(p.getName());
-                        System.out.print("fired from ");
+                        System.out.print("You fired from ");
                         TimeUnit.SECONDS.sleep(1);
                         System.out.println(Weapeon.MATILDA_PISTOL.getName());
                         int shot = 1;
@@ -48,8 +47,7 @@ public class Fight {
 
                     }
                     case 2 -> {
-                        System.out.println(p.getName());
-                        System.out.print("fireing from ");
+                        System.out.print("You fired from ");
                         System.out.println(Weapeon.SHOTGUN.getName());
                         TimeUnit.SECONDS.sleep(1);
                         int shot = 1;
@@ -74,8 +72,7 @@ public class Fight {
                     }
 
                     case 3 -> {
-                        System.out.println(p.getName());
-                        System.out.print("fireing from ");
+                        System.out.print("You fired from ");
                         System.out.println(Weapeon.DEAGLE.getName());
                         TimeUnit.SECONDS.sleep(1);
                         int shot = 1;

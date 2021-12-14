@@ -98,7 +98,14 @@ public class Room {
 
     public static void saveRoom(Entity p) throws InterruptedException{
         System.out.println("Its save room");
-        System.out.println("");
+        int x = Integer.parseInt(Utility.getInput());
+        switch (x){
+            case 1 -> System.exit(0);
+            case 2 -> {
+                System.out.println("work in peogress... next room isn't coded yet");
+                System.exit(0);
+            }
+        }
     }
 
 
