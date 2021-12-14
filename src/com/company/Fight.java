@@ -52,6 +52,7 @@ public class Fight {
                                 return;
                             }
                         }
+                        isEnemyDead(z);
                         return;
 
 
@@ -78,6 +79,7 @@ public class Fight {
                             lowDistance(z,p);
                             distance = 10;
                         }
+                        isEnemyDead(z);
                     return;
                     }
 
@@ -100,8 +102,10 @@ public class Fight {
 
                             while (distance <= 0){
                                 lowDistance(z,p);
-                                return;
+
                             }
+                            isEnemyDead(z);
+                            return;
                         }
                     }
                 }
@@ -251,6 +255,7 @@ public class Fight {
 
 
     public static void lowDistance(Entity z, Entity p) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(2);
         System.out.println("Zombie got you");
         System.out.print("1 -Use ");
         System.out.println(Weapeon.KNIFE.getName());
@@ -266,7 +271,7 @@ public class Fight {
                     System.out.print("You saved your life with");
                     System.out.println(Weapeon.KNIFE.getName());
                     z.setHp(-1);
-                    isEnemyDead(z);
+                    fightend();
                 }else{
                     System.out.println("Knife is broken!");
                     p.setHp(-1);
