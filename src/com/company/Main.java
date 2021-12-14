@@ -26,7 +26,11 @@ public class Main {
         Room room2 = new Room("Main Hall");
         room2.hall(p,z);
 
+        Room room3 = new Room("Left Wing");
+        room3.leftCoridor(p,z);
 
+        Room room4 = new Room("Save room");
+        room4.saveRoom(p);
 
     }
 

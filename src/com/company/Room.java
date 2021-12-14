@@ -22,9 +22,9 @@ public class Room {
         System.out.println("Nobody isn't here");
         TimeUnit.SECONDS.sleep(2);
         System.out.println("You are entering gas station");
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         System.out.println("Lights off, in back storage are some noises...");
-        TimeUnit.MILLISECONDS.sleep(25);
+        TimeUnit.MILLISECONDS.sleep(50);
         System.out.println("Going ot check it...");
         TimeUnit.SECONDS.sleep(5);
         System.out.println("Some creature biting pollice officer");
@@ -75,7 +75,30 @@ public class Room {
         System.out.println("There is one zomie ahead");
         TimeUnit.SECONDS.sleep(2);
         fight(p, z);
+        TimeUnit.SECONDS.sleep(2);
+        System.out.println("Doors to left west wing seems to be Unlockable");
+        System.out.println("Going in");
 
+    }
+    public void leftCoridor(Entity p, Entity z) throws InterruptedException{
+        System.out.println("Broken window, its raining");
+        TimeUnit.SECONDS.sleep(2);
+        System.out.println("Only silent here.... kinda suspicious");
+        TimeUnit.SECONDS.sleep(2);
+        System.out.println("Corner i hear steps");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("Another zombie");
+        TimeUnit.SECONDS.sleep(1);
+        fight(p,z);
+        System.out.println("He had a few Deagle bullets in pocket (8)");
+        Weapeon.DEAGLE.setAmmo(Weapeon.DEAGLE.getAmmo()+8);
+        TimeUnit.SECONDS.sleep(3);
+        System.out.println("Some door..");
+    }
+
+    public static void saveRoom(Entity p) throws InterruptedException{
+        System.out.println("Its save room");
+        System.out.println("");
     }
 
 
