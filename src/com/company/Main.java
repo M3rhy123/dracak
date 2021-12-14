@@ -11,7 +11,7 @@ public class Main {
 
         p = new Entity("Leon", "person","survivor", 100, 0);
 
-        z = new Entity("Zombie", "zombie","enemy", 80, 0);
+        z = new Entity("Zombie", "zombie","enemy", 25, 0);
         b = new Entity("Mr. Birkin", "G-mutnant", "enemy", 300, 0);
 
         Weapeon.MATILDA_PISTOL.setAmmo(14);

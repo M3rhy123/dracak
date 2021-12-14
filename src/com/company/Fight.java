@@ -11,17 +11,7 @@ public class Fight {
         num = Integer.parseInt(Utility.getInput());
         switch (num) {
             case 1 -> {
-                TimeUnit.SECONDS.sleep(2);
-                System.out.println("Choose gun");
-                System.out.print("1 - ");
-                System.out.print(Weapeon.MATILDA_PISTOL.getName() + " DMG " + Weapeon.MATILDA_PISTOL.getDmg());
-                System.out.println(" Ammo " + Weapeon.MATILDA_PISTOL.getAmmo());
-                System.out.print("2 - ");
-                System.out.print(Weapeon.SHOTGUN.getName() + " DMG " + Weapeon.SHOTGUN.getDmg());
-                System.out.println(" Ammo " + Weapeon.SHOTGUN.getAmmo());
-                System.out.print("3 - ");
-                System.out.print(Weapeon.DEAGLE.getName() + " DMG " + Weapeon.DEAGLE.getDmg());
-                System.out.println(" Ammo " + Weapeon.DEAGLE.getAmmo());
+                choosegun();
                 x = Integer.parseInt(Utility.getInput());
                 int upperBound = 5;
                 int lowerBound = 2;
@@ -137,17 +127,7 @@ public class Fight {
         num = Integer.parseInt(Utility.getInput());
         switch (num) {
             case 1 -> {
-                TimeUnit.SECONDS.sleep(2);
-                System.out.println("Choose gun");
-                System.out.print("1 - ");
-                System.out.print(Weapeon.MATILDA_PISTOL.getName() + " DMG " + Weapeon.MATILDA_PISTOL.getDmg());
-                System.out.println(" Ammo " + Weapeon.MATILDA_PISTOL.getAmmo());
-                System.out.print("2 - ");
-                System.out.print(Weapeon.SHOTGUN.getName() + " DMG " + Weapeon.SHOTGUN.getDmg());
-                System.out.println(" Ammo " + Weapeon.SHOTGUN.getAmmo());
-                System.out.print("3 - ");
-                System.out.print(Weapeon.DEAGLE.getName() + " DMG " + Weapeon.DEAGLE.getDmg());
-                System.out.println(" Ammo " + Weapeon.DEAGLE.getAmmo());
+                choosegun();
                 x = Integer.parseInt(Utility.getInput());
                 int upperBound = 5;
                 int lowerBound = 2;
@@ -285,6 +265,21 @@ public class Fight {
             }
         }
         return;
+    }
+
+    public static boolean choosegun() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(2);
+        System.out.println("Choose gun");
+        System.out.print("1 - ");
+        System.out.print(Weapeon.MATILDA_PISTOL.getName() + " DMG " + Weapeon.MATILDA_PISTOL.getDmg());
+        System.out.println(" Ammo " + Weapeon.MATILDA_PISTOL.getAmmo());
+        System.out.print("2 - ");
+        System.out.print(Weapeon.SHOTGUN.getName() + " DMG " + Weapeon.SHOTGUN.getDmg());
+        System.out.println(" Ammo " + Weapeon.SHOTGUN.getAmmo());
+        System.out.print("3 - ");
+        System.out.print(Weapeon.DEAGLE.getName() + " DMG " + Weapeon.DEAGLE.getDmg());
+        System.out.println(" Ammo " + Weapeon.DEAGLE.getAmmo());
+        return true;
     }
 
     public static boolean isPlayerDead(Entity p) {

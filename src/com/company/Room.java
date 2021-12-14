@@ -57,23 +57,23 @@ public class Room {
     }
 
     public void hall(Entity p, Entity z) throws InterruptedException {
+        z.setHp(73);
         System.out.println("You enterd the " + name);
-        TimeUnit.SECONDS.sleep(3);
-        System.out.println("The place is really messed up, blod everywhere, nobody nowhere...");
         TimeUnit.SECONDS.sleep(5);
+        System.out.println("The place is really messed up, blod everywhere, nobody nowhere...");
+        TimeUnit.SECONDS.sleep(6);
         System.out.println("Ohh small ammo pacage");
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         System.out.println("24 bullets to pistol");
         Weapeon.MATILDA_PISTOL.setAmmo(Weapeon.MATILDA_PISTOL.getAmmo() + 24);
-        TimeUnit.SECONDS.sleep(1);
-        System.out.println("You are looking for anything other...");
         TimeUnit.SECONDS.sleep(2);
+        System.out.println("You are looking for anything other...");
+        TimeUnit.SECONDS.sleep(3);
         System.out.println("Pacage with 3 shotgun ammo");
         Weapeon.SHOTGUN.setAmmo(Weapeon.SHOTGUN.getAmmo() + 3);
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         System.out.println("There is one zomie ahead");
-        TimeUnit.SECONDS.sleep(3);
-        Weapeon.MATILDA_PISTOL.setAmmo(1);
+        TimeUnit.SECONDS.sleep(2);
         fight(p, z);
 
     }
