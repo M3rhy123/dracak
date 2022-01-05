@@ -15,6 +15,17 @@ public class Room {
     public Room(String name) {
         this.name = name;
     }
+    
+    public void start() throws InterruptedException{
+        System.out.println("  ____                 _       _                  _       _____           _   _     ____  ");
+        System.out.println(" |  _ \\    ___   ___  (_)   __| |   ___   _ __   | |_    | ____| __   __ (_) | |   |___ \\ ");
+        System.out.println(" | |_) |  / _ \\ / __| | |  / _` |  / _ \\ | '_ \\  | __|   |  _|   \\ \\ / / | | | |     __) |");
+        System.out.println(" |  _ <  |  __/ \\__ \\ | | | (_| | |  __/ | | | | | |_    | |___   \\ V /  | | | |    / __/ ");
+        System.out.println(" |_| \\_\\  \\___| |___/ |_|  \\__,_|  \\___| |_| |_|  \\__|   |_____|   \\_/   |_| |_|   |_____|");
+        System.out.println("*lidl version");
+        TimeUnit.SECONDS.sleep(5);
+
+    }
 
     public void gasStation(Entity p, Entity z) throws InterruptedException {
         System.out.println("You arrived to gas station");
